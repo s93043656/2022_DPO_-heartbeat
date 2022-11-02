@@ -1,0 +1,217 @@
+
+/* ========== 內文--標題 ========== */
+h1 {
+    background: linear-gradient(20deg, #e0eaff 0%, #727f98 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.125rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    display: inline-block;
+}
+h1::before {
+    content: '';
+    background: url(../img/ti_from.png) no-repeat;
+    width: 87px;
+    height: 39px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+h1::after {
+    content: '';
+    background: url(../img/ti_back.png) no-repeat;
+    width: 87px;
+    height: 39px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+h2 {
+    font-size: 1.625rem;
+    margin-top: 50px;
+    position: relative;
+}
+h2::after {
+    content: '';
+    background: url(../img/line_gara.png) no-repeat;
+    width: 268px;
+    height: 16px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+}
+h4 {font-size: 2.125rem;}
+h5 {font-size: 1.375rem;}
+span.h5_txt {font-size: 1.2rem;}
+
+
+/* ========== 內文--文字設定 ========== */
+p.text_center, p.text_left, ul.text_left {
+    width: 80%;
+    font-size: 1.125rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+/* --- 內文文字--靠左設定 --- */
+p.text_left {
+    width: 60%;
+    text-align: left;
+}
+
+/* --- 項目文字--靠左設定 --- */
+ul.text_left {
+    width: 70%;
+    text-align: left;
+}
+
+
+/* ========== table--表格 ========== */
+.tableBox {
+    width: 80%;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.tableBox th, .tableBox td {
+    border: 1px solid #292b31;
+    vertical-align: middle;
+    padding: 7px;
+}
+.tableBox th {
+    background: #1c2630;
+    color: #ccd6ec;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+.tableBox td {
+    background: #5a6e8d;
+    font-size: 1rem;
+    color: #fff;
+}
+.tableBox .td_h3 {
+    background: #7da6f1;
+    color: #000;
+    font-size: 1.125rem;
+}
+/* --- 表格標題--刮弧字樣式 --- */
+span.ex_txt {font-size: 1.2rem;}
+
+/* --- 表格小標題--無icon設定 --- */
+.tableBox .td_h6 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff2c1;
+}
+
+/* --- 表格小標題--有icon設定 --- */
+.tableBox .td_h7 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff2c1;
+    /* border: none; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.tableBox .td_h7 img {
+    max-width: 40px;
+    margin-top: 0;
+    margin-right: 7px;
+}
+/* --- 表格bg--雙背景設定 --- */
+.tableBox td.color_odd {background: #7490b8 !important;}
+
+/* --- 表格文字--靠左設定 --- */
+.td_left {text-align: left;}
+
+/* --- video --- */
+.videobox {
+    position: relative;
+    width: 90%;
+    max-width: 90%;
+    margin: 30px auto;
+    height: 0;
+    padding-bottom: 48.25%;
+}
+.videobox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* ========== table--表格 ========== */
+    .tableBox {width: 90%;}
+    .tableBox th {font-size: 1.2rem;}
+
+    /* --- 內文文字--靠左設定 --- */
+    p.text_left {width: 70%;}
+
+    /* --- 項目文字--靠左設定 --- */
+    ul.text_left {width: 70%;}
+
+}
+
+
+
+@media screen and (max-width: 573px) {
+
+    /* ========== 內文--標題 ========== */
+    h1 {font-size: 2.25rem;}
+    h1::before {
+        height: 38px;
+        background-size: auto 38px;
+        /* transform: translate(-35px, -50%); */
+    }
+    h1::after {
+        height: 38px;
+        background-size: auto 38px;
+    }
+    h4 {font-size: 1.625rem;}
+    h5 {font-size: 1.3rem;}
+    span.h5_txt {
+        font-size: 1rem;
+        display: block;
+    }
+
+    /* ========== table--表格 ========== */
+    .tableBox {width: 100%;}
+    .tableBox th {line-height: 1.5rem;}
+    .tableBox td {font-size: .875rem;}
+    .tableBox .td_h3 {font-size: 1rem;}
+
+    /* --- 表格標題--刮弧字樣式 --- */
+    span.ex_txt {
+        font-size: .875rem;
+        display: block;
+    }
+
+
+    /* ========== 內文--文字設定 ========== */
+    p.text_center, p.text_left, ul.text_left {
+        width: 80%;
+        font-size: .875rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.8rem;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+}
